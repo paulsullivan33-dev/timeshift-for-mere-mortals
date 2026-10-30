@@ -1,0 +1,74 @@
+$ uname -sr; cat /etc/os-release | head -2; whoami
+Linux 7.0.0-39-generic
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+VERSION_ID="24.04"
+root
+
+$ ls /dev   # every block device on this machine
+char
+console
+core
+fd
+full
+log
+mqueue
+net
+null
+ptmx
+pts
+random
+shm
+stderr
+stdin
+stdout
+tty
+urandom
+zero
+
+$ lsblk
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+vda    253:0    0  6.9G  1 disk 
+vdb    253:16   0  7.5G  0 disk 
+vdc    253:32   0  1.2G  1 disk 
+|-vdc1 253:33   0  1.2G  1 part 
+|-vdc2 253:34   0  9.8M  1 part 
+`-vdc3 253:35   0    4K  1 part 
+vdd    253:48   0  200G  0 disk 
+`-vdd1 253:49   0  200G  0 part 
+
+$ blkid   # the tool Timeshift uses to find devices
+(exit 2)
+
+$ findmnt -no SOURCE,TARGET,FSTYPE /
+overlay[/var/lib/hatch-runtime/rootfs-base] /      overlay
+
+$ apt-cache policy timeshift   (lab lists, Ubuntu noble)
+timeshift:
+  Installed: (none)
+  Candidate: 24.01.1-1build2
+  Version table:
+     24.01.1-1build2 500
+        500 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages
+$ ls debs/*.deb   # the not-yet-installed closure, downloaded and unpacked with dpkg -x into root/ — nothing was installed system-wide
+inxi_3.3.34-1-1_all.deb
+libdbusmenu-glib4_18.10.20180917~bzr492+repack1-3.1ubuntu5_amd64.deb
+libdbusmenu-gtk3-4_18.10.20180917~bzr492+repack1-3.1ubuntu5_amd64.deb
+libgee-0.8-2_0.20.6-1build2_amd64.deb
+libgnomekbd-common_3.28.1-1build3_all.deb
+libgnomekbd8_3.28.1-1build3_amd64.deb
+libxapp-gtk3-module_2.8.2-1build3_amd64.deb
+libxapp1_2.8.2-1build3_amd64.deb
+libxklavier16_5.4-5build2_amd64.deb
+lm-sensors_1%3a3.6.0-9build1_amd64.deb
+mesa-utils-bin_9.0.0-2_amd64.deb
+mesa-utils_9.0.0-2_amd64.deb
+pciutils_1%3a3.10.0-2build1_amd64.deb
+timeshift_24.01.1-1build2_amd64.deb
+usbutils_1%3a017-3build1_amd64.deb
+x11-xserver-utils_7.7+10build2_amd64.deb
+xapp-sn-watcher_2.8.2-1build3_amd64.deb
+xapps-common_2.8.2-1build3_all.deb
+
+$ ./ts.sh --version   (the extracted, unmodified binary)
+Timeshift 24.01.1
+(exit 0)

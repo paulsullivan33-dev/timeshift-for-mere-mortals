@@ -1,0 +1,28 @@
+site_name: Timeshift for Mere Mortals
+site_description: System snapshots you can roll back to. Timeshift copies your system exactly as it stands, keeps a shelf of dated snapshots that share every unchanged file between them, and puts the whole machine back the way it was when an update or a change goes wrong, with the limits stated plainly.
+site_url: https://paulsullivan33-dev.github.io/timeshift-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text CC BY 4.0, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What Timeshift Is: what-timeshift-is.md
+  - The Moving Parts: the-moving-parts.md
+  - Installing Timeshift: installing-timeshift.md
+  - Two Modes — Rsync and Btrfs: two-modes.md
+  - Your First Snapshot: your-first-snapshot.md
+  - Proving the Snapshot: proving-the-snapshot.md
+  - Schedules and Keeping Counts: schedules-and-retention.md
+  - Restoring: restoring.md
+  - Single Files Back by Hand: single-files-by-hand.md
+  - What to Leave Out: what-to-leave-out.md
+  - Recipes: recipes.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

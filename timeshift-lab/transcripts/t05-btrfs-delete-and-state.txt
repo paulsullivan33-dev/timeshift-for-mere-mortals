@@ -1,0 +1,27 @@
+$ ./ts.sh --btrfs --create --scripted --comments "lab btrfs attempt"   # the other mode, same machine
+E: Error opening directory '/dev/mapper': No such file or directory
+E: System disk not found!
+(exit 1)
+
+$ ./ts.sh --delete-all --yes --scripted   # deleting when there is nothing to delete
+E: Error opening directory '/dev/mapper': No such file or directory
+
+Snapshot device not available
+Device not found: UUID='d2c1af7e-21d2-4f2d-b35a-1929628383ee'
+(exit 1)
+
+$ cat /etc/cron.d/timeshift-hourly   # installed by the --check run in t03
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=""
+
+0 * * * * root timeshift --check --scripted
+
+$ ls -d /timeshift /run/timeshift 2>&1   # did any snapshot directory appear anywhere?
+ls: cannot access '/timeshift': No such file or directory
+/run/timeshift
+
+$ LD_LIBRARY_PATH=$PWD/root/usr/lib/x86_64-linux-gnu $PWD/root/usr/bin/timeshift-gtk   # the GUI on a machine with no display
+
+(timeshift-gtk:73142): Gtk-WARNING **: 08:56:07.185: cannot open display: 
+(exit 0)

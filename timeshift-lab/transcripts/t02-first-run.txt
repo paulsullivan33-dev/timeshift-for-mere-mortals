@@ -1,0 +1,185 @@
+$ ./ts.sh --list-devices
+E: Error opening directory '/dev/mapper': No such file or directory
+E: Failed to open file “/etc/timeshift/timeshift.json”: No such file or directory
+
+(process:72651): Json-CRITICAL **: 08:55:19.137: json_node_get_object: assertion 'JSON_NODE_IS_VALID (node)' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+(process:72651): Json-CRITICAL **: 08:55:19.137: json_object_has_member: assertion 'object != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_string: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_string: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_string: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_uint64: assertion 'jobj != NULL' failed
+
+** (process:72651): CRITICAL **: 08:55:19.137: tee_jee_json_helper_json_get_uint64: assertion 'jobj != NULL' failed
+
+(process:72651): Json-CRITICAL **: 08:55:19.137: json_object_has_member: assertion 'object != NULL' failed
+
+(process:72651): Json-CRITICAL **: 08:55:19.137: json_object_has_member: assertion 'object != NULL' failed
+
+Devices with Linux file systems:
+
+E: Error opening directory '/dev/mapper': No such file or directory
+Num    Device  Size  Type  Label  
+------------------------------------------------------------------------------
+
+(exit 0)
+
+$ ./ts.sh --check    # first run ever on this machine
+E: Error opening directory '/dev/mapper': No such file or directory
+E: Failed to open file “/etc/timeshift/timeshift.json”: No such file or directory
+
+(process:72681): Json-CRITICAL **: 08:55:19.312: json_node_get_object: assertion 'JSON_NODE_IS_VALID (node)' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+(process:72681): Json-CRITICAL **: 08:55:19.313: json_object_has_member: assertion 'object != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_string: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_string: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_string: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_uint64: assertion 'jobj != NULL' failed
+
+** (process:72681): CRITICAL **: 08:55:19.313: tee_jee_json_helper_json_get_uint64: assertion 'jobj != NULL' failed
+
+(process:72681): Json-CRITICAL **: 08:55:19.313: json_object_has_member: assertion 'object != NULL' failed
+
+(process:72681): Json-CRITICAL **: 08:55:19.313: json_object_has_member: assertion 'object != NULL' failed
+
+Select backup device:
+
+Num    Device  Size  Type  Label  
+------------------------------------------------------------------------------
+
+Enter device name or number (a=Abort): E: Invalid input
+Enter device name or number (a=Abort): E: Invalid input
+Enter device name or number (a=Abort): E: Invalid input
+
+E: Failed to get input from user in 3 attempts
+Aborted.
+(exit 1)
+
+$ ls /etc/timeshift/
+ls: cannot access '/etc/timeshift/': No such file or directory
+
+$ ./ts.sh --list
+E: Error opening directory '/dev/mapper': No such file or directory
+E: Failed to open file “/etc/timeshift/timeshift.json”: No such file or directory
+
+(process:72714): Json-CRITICAL **: 08:55:19.454: json_node_get_object: assertion 'JSON_NODE_IS_VALID (node)' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+(process:72714): Json-CRITICAL **: 08:55:19.454: json_object_has_member: assertion 'object != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_string: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_string: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_bool: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_int: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.454: tee_jee_json_helper_json_get_string: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.456: tee_jee_json_helper_json_get_uint64: assertion 'jobj != NULL' failed
+
+** (process:72714): CRITICAL **: 08:55:19.456: tee_jee_json_helper_json_get_uint64: assertion 'jobj != NULL' failed
+
+(process:72714): Json-CRITICAL **: 08:55:19.456: json_object_has_member: assertion 'object != NULL' failed
+
+(process:72714): Json-CRITICAL **: 08:55:19.456: json_object_has_member: assertion 'object != NULL' failed
+Device : Not Selected
+
+
+** (process:72714): CRITICAL **: 08:55:19.457: gee_abstract_collection_get_size: assertion 'self != NULL' failed
+No snapshots found
+(exit 1)

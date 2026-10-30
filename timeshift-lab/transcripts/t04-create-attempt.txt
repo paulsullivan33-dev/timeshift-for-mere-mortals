@@ -1,0 +1,30 @@
+$ ./ts.sh --create --comments "lab first snapshot" --tags D
+E: Error opening directory '/dev/mapper': No such file or directory
+
+Select backup device:
+
+Num    Device  Size  Type  Label  
+------------------------------------------------------------------------------
+
+Enter device name or number (a=Abort): E: Invalid input
+Enter device name or number (a=Abort): E: Invalid input
+Enter device name or number (a=Abort): E: Invalid input
+
+E: Failed to get input from user in 3 attempts
+Aborted.
+(exit 1)
+
+$ ./ts.sh --create --scripted --comments "lab first snapshot" --tags D   # non-interactive form
+E: Error opening directory '/dev/mapper': No such file or directory
+
+Snapshot device not available
+Device not found: UUID='d2c1af7e-21d2-4f2d-b35a-1929628383ee'
+(exit 1)
+
+$ ls /var/log/timeshift/
+2026-10-30_08-55-18_list-devices.log
+2026-10-30_08-55-19_backup.log
+2026-10-30_08-55-19_list-snapshots.log
+2026-10-30_08-55-50_backup.log
+2026-10-30_08-55-50_list-snapshots.log
+2026-10-30_08-55-59_ondemand.log
